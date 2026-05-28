@@ -1,4 +1,4 @@
-# cs-ia-student-mental-health-survey
+# CS-IA-student-mental-health-assessment
 
 A Streamlit web app that screens students for depression risk using a short 5-step survey. It returns a **Low / Moderate / Elevated** risk level and links to Canadian crisis resources.
 
@@ -30,5 +30,3 @@ streamlit run app.py
 | Kids Help Phone | 1-800-668-6868 (call or text) |
 | Crisis Text Line | Text HELLO to 686868 |
 | 9-8-8 Suicide Crisis Helpline | Call or text 9-8-8 |
-# CS-IA-student-mental-health-assessment
-# CS-IA-student-mental-health-assessment
