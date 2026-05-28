@@ -1,0 +1,37 @@
+{
+  "feature_order": [
+    "Gender",
+    "Age",
+    "Academic_Pressure",
+    "CGPA",
+    "Study_Satisfaction",
+    "Sleep_Duration",
+    "Dietary_Habits",
+    "Have_you_ever_had_suicidal_thoughts_",
+    "Work_Study_Hours",
+    "Financial_Stress",
+    "Family_History_of_Mental_Illness",
+    "Stress_Indicator",
+    "Poor_Sleep",
+    "High_Financial_Stress"
+  ],
+  "threshold": 0.39,
+  "risk_cutoffs": {
+    "low_medium": 0.2703,
+    "medium_high": 0.8644
+  },
+  "lgb_path": "lgb_model.joblib",
+  "xgb_path": "xgb_model.joblib",
+  "cv_metrics": {
+    "lgb_auc": 0.91996,
+    "xgb_auc": 0.91931,
+    "ensemble_auc": 0.91995,
+    "ensemble_accuracy": 0.84656,
+    "optimal_threshold": 0.39
+  },
+  "training_info": {
+    "n_samples": 27901,
+    "n_features": 14,
+    "depression_rate": 0.5855
+  }
+} 
