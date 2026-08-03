@@ -2,6 +2,8 @@
 
 A Streamlit web app that screens students for depression risk using a short 5-step survey. It returns a **Low / Moderate / Elevated** risk level and links to Canadian crisis resources.
 
+**Try it:** [helpingminds.ca/check-in](https://www.helpingminds.ca/check-in/)
+
 > **Disclaimer:** This tool is not a clinical diagnosis. It uses a statistical model trained on survey data and cannot account for your full personal situation. If you are struggling, please reach out to a trusted adult or one of the crisis resources listed in the app.
 
 ## How It Works
