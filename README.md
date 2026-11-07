@@ -20,6 +20,16 @@ Users answer questions across five steps:
 
 The app then runs an ensemble of LightGBM + XGBoost models (trained on the Kaggle Playground Series S4E11 depression dataset) and maps the averaged probability to a risk level.
 
+## Limitations
+
+- **The live site runs a different model.** The check-in at helpingminds.ca uses a simpler logistic regression that runs in the browser, not the LightGBM + XGBoost ensemble in this repo. The accuracy figures for the ensemble do not apply to the live page.
+- **Synthetic training data.** The Kaggle Playground dataset is generated, not collected from real students, so the patterns it learned may not transfer cleanly to real high school students.
+- **Missing risk factors.** There are no questions on social media use, peer relationships or bullying, which the client flagged as major factors for high school students.
+- **Gender.** The dataset only has two gender categories. For non-binary users the model runs once as each and averages the two results, which is a workaround rather than a real fit.
+- **One-time snapshot.** Each check-in stands alone, so the tool cannot track how someone's risk changes over time.
+
+**Future work:** real anonymized student data collected with ethics approval, question categories for the missing factors above, and retakes so changes in risk can be tracked.
+
 ## Running Locally
 
 ```bash
